@@ -17,7 +17,7 @@
 
   <textarea id="editor">
 function myScript(){
-  return 100;
+  return 200;
 }</textarea>
 
 <footer>
@@ -33,6 +33,20 @@ function myScript(){
       theme: 'monokai',
       mode: "javascript"
     });
+
+    // Código do Electron
+    const { ipcRenderer } = require('electron');
+
+    function salvarArquivo() {
+      const conteudoDoArquivo = $myCodeMirror.getValue();
+      console.log(conteudoDoArquivo);
+
+      ipcRenderer.send('renderer/salvar_arquivo', conteudoDoArquivo);
+    }
+
+    ipcRenderer.on('main/salvar_arquivo', function(event, mensagemDaMain) {
+      console.log('Resposta da main:', mensagemDaMain);
+    })
   </script>
 </body>
 

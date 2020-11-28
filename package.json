@@ -1,0 +1,24 @@
+{
+  "name": "mini-vscode-alurajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^11.0.3"
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omariosouto/mini-vscode-alurajs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/omariosouto/mini-vscode-alurajs/issues"
+  },
+  "homepage": "https://github.com/omariosouto/mini-vscode-alurajs#readme"
+}
