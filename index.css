@@ -1,0 +1,38 @@
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+
+body,
+html {
+  padding: 15px;
+  margin: 0;
+  background: #252526;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  margin-left: 15px;
+  max-width: 50px;
+}
+
+button {
+  border: 0;
+  border-radius: 4px;
+  background: #0078d7;
+  color: white;
+  padding: 15px 10px;
+  font-size: 16px;
+}
+
+.CodeMirror {
+  border: 3px solid #ffffff;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  padding: 5px;
+}
